@@ -1,6 +1,8 @@
-//import React from 'react';
+import React from 'react';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';  
+
+let feelings =[];
 
 function Feeling(){
     const dispatch = useDispatch();
@@ -18,12 +20,13 @@ function Feeling(){
     return (
       <div>
         <div>
-             <input onChange={changeFeeling} type="text" placeholder="Feeling"/><button onClick={addFeeling}>Next</button>
+             <input type="text" placeholder="feeling" onChange={changeFeeling}></input>
+             <button onClick={addFeeling}>Next</button>
           </div>
   
           <div className="feelinginfo">
   
-        {feeling.map((feeling, i) => 
+        {feelings.map((feeling, i) => 
           <img 
             key={i}
             src={feeling}

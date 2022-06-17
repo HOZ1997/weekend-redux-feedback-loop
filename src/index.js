@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore, combineReducers} from 'redux'; 
 import {Provider} from 'react-redux'; 
 
-const sendFeeling = (state ="test", action) =>{
+const sendFeeling = (state ='', action) =>{
     if (action.type === 'SEND_FEELING'){
         state = action.payload; 
     }
@@ -16,7 +16,7 @@ const sendFeeling = (state ="test", action) =>{
 
 const store = createStore(
     combineReducers({
-        sendFeeling,
+        sendFeeling
 
     })
 )

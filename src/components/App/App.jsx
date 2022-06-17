@@ -4,19 +4,24 @@ import './App.css';
 import {Route, HashRouter} from 'react-router-dom';
 
 import Feeling from '../Feeling/Feeling.jsx';
+import { useSelector } from 'react-redux';
 
 function App(){
-
+  const gotFeeling = useSelector( store => store.sendFeeling );
   return (
+
+        
+
     <div className='App'>
       <header className='App-header'>
         <h1 className='App-title'>Feedback!</h1>
         <h4>Don't forget it!</h4>
-      </header>
-
+        </header>
+ 
       <ul>
-      <p>How are you feeling today?</p>
-    <li><a href="/#/feeling">Feeling</a></li>
+      <h1>How are you feeling today?</h1>
+    <li><a href="/#/feeling">{ gotFeeling }</a></li>
+    <p> Feeling?: { gotFeeling } </p>
     </ul>
       <HashRouter>
         <Route path="/feeling">
