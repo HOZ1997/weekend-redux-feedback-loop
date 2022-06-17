@@ -1,13 +1,46 @@
-// import {useState} from 'react'; 
+// import React from 'react';
+// import {useState} from 'react';
+// import {useDispatch} from 'react-redux';  
+
+// let support =[];
 
 // function Supported(){
-//  //template hook
-//  const [hook, setHook] = useState (null); 
-//     return(
+//     const dispatch = useDispatch();
+//     const [supported, setSupported] = useState('');
+//     //const history = useHistory();
+  
+//     const changeSupported = (event) => {
+//       setFeeling(event.target.value)
+//     }
+  
+//     const addSupported = () =>{
+//       dispatch({type: 'SEND_SUPPORT', payload: supported})
+//       //history.push ('/understand')
+//     }
+  
+//     return (
+//       <div>
 //         <div>
-//             <h2>Supported</h2>
-//             <p>{JSON.stringify(props)}</p> 
+//              <input type="text" placeholder="supported" onChange={changeSupported}></input>
+//              <button onClick={addSupported}>Next</button>
+//           </div>
+  
+//           <div className="supportinfo">
+  
+//         {support.map((supported, i) => 
+//           <img 
+//             key={i}
+//             src={supported}
+//           />
+//         )}
 //         </div>
-//     )
-// }
+//       </div>
+    
+//     );
+//   }
+  
+
+
+
+
 // export default Supported; 

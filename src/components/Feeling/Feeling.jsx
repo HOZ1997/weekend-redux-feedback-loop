@@ -7,7 +7,7 @@ let feelings =[];
 function Feeling(){
     const dispatch = useDispatch();
     const [feeling, setFeeling] = useState('');
-    //const history = useHistory();
+   //const history = useHistory();
   
     const changeFeeling = (event) => {
       setFeeling(event.target.value)
@@ -15,6 +15,7 @@ function Feeling(){
   
     const addFeeling = () =>{
       dispatch({type: 'SEND_FEELING', payload: feeling})
+    //history.push ('/supported')
     }
   
     return (
