@@ -10,32 +10,24 @@ function Feeling(){
    //const history = useHistory();
   
     const changeFeeling = (event) => {
+      console.log (feelings)
       setFeeling(event.target.value)
     }
   
     const addFeeling = () =>{
       dispatch({type: 'SEND_FEELING', payload: feeling})
-    //history.push ('/supported')
+    //history.push ('/understanding')
     }
   
     return (
       <div>
         <div>
-             <input type="text" placeholder="feeling" onChange={changeFeeling}></input>
-             <button onClick={addFeeling}>Next</button>
+        <h1>How are you feeling today?</h1>
+        <p>Feeling?</p>
+        <input type="text" placeholder="Feeling required information" onChange={changeFeeling}></input>
+             <button onClick={addFeeling}>NEXT</button>
           </div>
-  
-          <div className="feelinginfo">
-  
-        {feelings.map((feeling, i) => 
-          <img 
-            key={i}
-            src={feeling}
-          />
-        )}
-        </div>
-      </div>
-    
+          </div>
     );
   }
   
