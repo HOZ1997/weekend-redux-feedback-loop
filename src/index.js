@@ -20,18 +20,26 @@ const sendUnderstand = (state ='', action) =>{
     return state; 
 }
 
-// const sendSupported = (state ='', action) =>{
-//     if (action.type === 'SEND_SUPPORT'){
-//         state = action.payload; 
-//     }
-//     return state; 
-// }
+const sendSupported = (state ='', action) =>{
+    if (action.type === 'SEND_SUPPORT'){
+        state = action.payload; 
+    }
+    return state; 
+}
+
+const sendComment = (state ='', action) =>{
+    if (action.type === 'SEND_COMMENT'){
+        state = action.payload; 
+    }
+    return state; 
+}
 
 const store = createStore(
     combineReducers({
         sendFeeling,
-        sendUnderstand
-        //sendSupported
+        sendUnderstand,
+        sendSupported,
+        sendComment
 
     })
 )

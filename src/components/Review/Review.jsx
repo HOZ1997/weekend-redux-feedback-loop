@@ -4,14 +4,22 @@ import { useSelector } from 'react-redux';
 function Review() {
     const gotFeeling = useSelector( store => store.sendFeeling );
     const gotUnderstand = useSelector( store => store.sendUnderstand );
+    const gotSupported = useSelector( store => store.sendSupported );
+    const gotComment = useSelector( store => store.sendComment );
   return (
     <div>
-      <h1>Review</h1>
+      <h1>Review Your Feedback</h1>
          
-  <li><a href="/#/home">{ gotFeeling }</a></li>
+ 
     <p> Feelings: { gotFeeling} </p>
     <p> Understanding: { gotUnderstand} </p>
+    <p> Support: { gotSupported} </p>
+    <p> Comments: { gotComment} </p>
+
+    <li><a href="/#/home">{ gotFeeling }</a></li>
     </div>
+
+
   );
 }
 
