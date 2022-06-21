@@ -26,15 +26,15 @@ function App(){
         <h4>Don't forget it!</h4>
         </header>
  
-      <ul>
-      {/* <li><a href="/#/home">Home</a></li> */}
+      {/* <ul>
+    
       <li><a href="/#/feeling">Feeling</a></li>
       <li><a href="/#/understand">Understand</a></li>
       <li><a href="/#/supported">Supported</a></li>
       <li><a href="/#/comment">Comment</a></li>
       <li><a href="/#/review">Review</a></li>
       <li><a href="/#/feedback">Feedback</a></li>
-    </ul>
+    </ul> */}
     <Router>
         <Route path="/" exact>
         <Feeling/>

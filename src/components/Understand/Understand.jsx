@@ -42,7 +42,7 @@ function Understand(){
         <h1>How well are you understanding the content?</h1>
         <p>Understanding?</p>
              <input type="text" placeholder="Understanding required information" onChange={changeUnderstand}></input>
-             <button onClick={addUnderstand}>Next</button>
+             <button onClick={addUnderstand}>NEXT</button>
           </div>
       </div>
     

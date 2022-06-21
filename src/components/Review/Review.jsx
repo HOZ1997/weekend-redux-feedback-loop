@@ -40,7 +40,7 @@ function Review() {
     <p> Understanding: { gotUnderstand} </p>
     <p> Support: { gotSupported} </p>
     <p> Comments: { gotComment} </p>
-    {/* <li><a href="/#/home">{ gotFeeling }</a></li> */}
+  
     
     <button onClick={sendFeedback}>SUBMIT</button>
     </div>

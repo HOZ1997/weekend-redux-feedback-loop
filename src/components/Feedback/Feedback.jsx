@@ -1,17 +1,4 @@
-// import React from 'react';
 
-// function Feedback() {
-//   return (
-//     <div>
-//       <h1>Feedback!</h1>
-   
-
-//      <h1>Thank you! </h1>
-
-//      {/* //Todo Leave New Feedback button that resets and brings you to home */}
-//     </div>
-//   );
-// }
 import React from 'react';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
@@ -38,8 +25,8 @@ function Feedback(){
     return (
       <div>
         <div>
-        <h1>Feedback?</h1>
-        <p>Thank you!</p>
+        <h1>Feedback!</h1>
+        <h2>Thank you!</h2>
         
              <button onClick={addingFeeback }>Leave New Feedback</button>
           </div>

@@ -1,19 +1,3 @@
-// import React from 'react';
-
-// function Supported() {
-//   return (
-//     <div>
-//       <h1>Supported</h1>
-   
-//     </div>
-//   );
-// }
-
-// export default Supported;
-
-
-
-
 import React from 'react';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';  
@@ -42,7 +26,7 @@ function Supported(){
         <h1>How well are you being supported?</h1>
         <p>Support?</p>
              <input type="text" placeholder="Support required information" onChange={changeSupported}></input>
-             <button onClick={addSupported}>Next</button>
+             <button onClick={addSupported}>NEXT</button>
           </div>
   
       </div>
