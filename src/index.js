@@ -34,6 +34,8 @@ const sendComment = (state ='', action) =>{
     return state; 
 }
 
+
+
 const store = createStore(
     combineReducers({
         sendFeeling,

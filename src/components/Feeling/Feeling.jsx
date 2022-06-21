@@ -1,13 +1,15 @@
 import React from 'react';
 import {useState} from 'react';
-import {useDispatch} from 'react-redux';  
+import {useDispatch} from 'react-redux';
+import {useHistory} from 'react-router-dom';   
 
 let feelings =[];
 
 function Feeling(){
     const dispatch = useDispatch();
+    const history =useHistory();
     const [feeling, setFeeling] = useState('');
-   //const history = useHistory();
+   
   
     const changeFeeling = (event) => {
       console.log (feelings)
@@ -16,7 +18,7 @@ function Feeling(){
   
     const addFeeling = () =>{
       dispatch({type: 'SEND_FEELING', payload: feeling})
-    //history.push ('/understanding')
+    history.push ('/understand')
     }
   
     return (

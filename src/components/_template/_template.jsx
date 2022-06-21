@@ -1,13 +1,12 @@
-import {useState} from 'react'; 
+// import React from 'react';
 
-function _template(props){
- //template hook
- const [hook, setHook] = useState (null); 
-    return(
-        <div>
-            <h2>_template</h2>
-            <p>{JSON.stringify(props)}</p> 
-        </div>
-    )
-}
-export default _template; 
+// function _template() {
+//   return (
+//     <div>
+//       <h1>_template</h1>
+   
+//     </div>
+//   );
+// }
+
+// export default _template;

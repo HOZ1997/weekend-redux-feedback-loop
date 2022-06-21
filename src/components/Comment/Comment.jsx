@@ -17,13 +17,14 @@
 import React from 'react';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';  
+import {useHistory} from 'react-router-dom';
 
 let comments =[];
 
 function Comment(){
     const dispatch = useDispatch();
     const [comment, setComment] = useState('');
-    //const history = useHistory();
+    const history = useHistory();
   
     const changeComment = (event) => {
         console.log (comments)
@@ -32,7 +33,7 @@ function Comment(){
   
     const addComment = () =>{
       dispatch({type: 'SEND_COMMENT', payload: comment})
-      //history.push ('/comment')
+      history.push ('/review')
     }
   
     return (

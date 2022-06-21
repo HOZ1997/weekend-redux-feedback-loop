@@ -17,13 +17,14 @@
 import React from 'react';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';  
+import {useHistory} from 'react-router-dom'; 
 
 let understanding =[];
 
 function Understand(){
     const dispatch = useDispatch();
     const [understand, setUnderstand] = useState('');
-    //const history = useHistory();
+    const history = useHistory();
   
     const changeUnderstand = (event) => {
         console.log (understanding)
@@ -32,7 +33,7 @@ function Understand(){
   
     const addUnderstand = () =>{
       dispatch({type: 'SEND_UNDERSTAND', payload: understand})
-      //history.push ('/understand')
+      history.push ('/supported')
     }
   
     return (

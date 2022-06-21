@@ -9,10 +9,10 @@ import Supported from '../Supported/Supported.jsx';
 import Understand from '../Understand/Understand.jsx';
 import Comment from '../Comment/Comment.jsx';
 import Review from '../Review/Review.jsx';
-import { useSelector } from 'react-redux';
+//import { useSelector } from 'react-redux';
 
 function App(){
-  const gotFeeling = useSelector( store => store.sendFeeling );
+  //const gotFeeling = useSelector( store => store.sendFeeling );
   //const gotSupported = useSelector( store => store.sendSupported );
   
   
@@ -58,17 +58,6 @@ function App(){
       </Router>
 
 
-
-
-
-
-
-      {/* <Router>
-        <Route path="/feeling">
-        <Feeling/>
-      
-        </Route>  
-      </Router> */}
     </div>
   );
 }

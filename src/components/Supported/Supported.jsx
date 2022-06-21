@@ -17,13 +17,14 @@
 import React from 'react';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';  
+import {useHistory} from 'react-router-dom'; 
 
 let support =[];
 
 function Supported(){
     const dispatch = useDispatch();
     const [supported, setSupported] = useState('');
-    //const history = useHistory();
+    const history = useHistory();
   
     const changeSupported = (event) => {
         console.log (support)
@@ -32,7 +33,7 @@ function Supported(){
   
     const addSupported = () =>{
       dispatch({type: 'SEND_SUPPORT', payload: supported})
-      //history.push ('/understand')
+      history.push ('/comment')
     }
   
     return (
