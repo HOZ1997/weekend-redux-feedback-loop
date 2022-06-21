@@ -27,7 +27,7 @@ function App(){
         </header>
  
       <ul>
-      <li><a href="/#/home">Home</a></li>
+      {/* <li><a href="/#/home">Home</a></li> */}
       <li><a href="/#/feeling">Feeling</a></li>
       <li><a href="/#/understand">Understand</a></li>
       <li><a href="/#/supported">Supported</a></li>
@@ -37,13 +37,9 @@ function App(){
     </ul>
     <Router>
         <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/home">
-          <Home/>
+        <Feeling/>
         </Route>
         <Route path="/feeling">
-          <Feeling/>
         </Route>
         <Route path="/understand">
           <Understand/>
@@ -59,7 +55,7 @@ function App(){
         </Route>
         <Route path="/feedback">
           <Feedback/>
-          </Route>  
+          </Route>
       </Router>
 
 
