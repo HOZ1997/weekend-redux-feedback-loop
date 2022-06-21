@@ -9,11 +9,12 @@ import Supported from '../Supported/Supported.jsx';
 import Understand from '../Understand/Understand.jsx';
 import Comment from '../Comment/Comment.jsx';
 import Review from '../Review/Review.jsx';
-//import { useSelector } from 'react-redux';
+import Feedback from '../Feedback/Feedback.jsx'
+
+
 
 function App(){
-  //const gotFeeling = useSelector( store => store.sendFeeling );
-  //const gotSupported = useSelector( store => store.sendSupported );
+ 
   
   
   return (
@@ -32,29 +33,33 @@ function App(){
       <li><a href="/#/supported">Supported</a></li>
       <li><a href="/#/comment">Comment</a></li>
       <li><a href="/#/review">Review</a></li>
+      <li><a href="/#/feedback">Feedback</a></li>
     </ul>
     <Router>
         <Route path="/" exact>
           <Home />
         </Route>
         <Route path="/home">
-          <Home />
+          <Home/>
         </Route>
         <Route path="/feeling">
-          <Feeling />
+          <Feeling/>
         </Route>
         <Route path="/understand">
-          <Understand />
+          <Understand/>
         </Route>
         <Route path="/supported">
-          <Supported />
+          <Supported/>
         </Route>
         <Route path="/comment">
-          <Comment />
+          <Comment/>
         </Route>
         <Route path="/review">
-          <Review />
+          <Review/>
         </Route>
+        <Route path="/feedback">
+          <Feedback/>
+          </Route>  
       </Router>
 
 

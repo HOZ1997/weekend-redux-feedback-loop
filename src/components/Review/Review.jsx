@@ -1,14 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
+import {useHistory} from 'react-router-dom'; 
+
 
 function Review() {
     const gotFeeling = useSelector( store => store.sendFeeling );
     const gotUnderstand = useSelector( store => store.sendUnderstand );
     const gotSupported = useSelector( store => store.sendSupported );
     const gotComment = useSelector( store => store.sendComment );
-    //const gotSubmit = useSelector (store=> store.sendSubmit);
     
+    const history = useHistory();
+
+
     const sendFeedback = ()=>{
         console.log ('send feedback');
     let addFeedback = {
@@ -23,6 +27,7 @@ function Review() {
         console.log(err);
         alert('error adding feeback to server')
     })
+    history.push('/feedback');
 }         
     
 

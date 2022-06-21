@@ -12,5 +12,43 @@ function Feedback() {
     </div>
   );
 }
+// import React from 'react';
+// import {useState} from 'react';
+// import {useDispatch} from 'react-redux';
+// import {useHistory} from 'react-router-dom';   
+
+// let feedbacks =[];
+
+// function Feedback(){
+//     const dispatch = useDispatch();
+//     const history =useHistory();
+//     const [feedbacks, setFeedback] = useState('');
+   
+  
+//     const changeFeedback = (event) => {
+//       console.log (feedbacks)
+//       setFeeling(event.target.value)
+//     }
+  
+//     const addFeeback = () =>{
+//       dispatch({type: 'SEND_FEEDBACK', payload: feedbacks})
+//     history.push ('/home')
+//     }
+  
+//     return (
+//       <div>
+//         <div>
+//         <h1>How are you feeling today?</h1>
+//         <p>Feeling?</p>
+        
+//              <button onClick={addFeeling}>NEXT</button>
+//           </div>
+//           </div>
+//     );
+//   }
+
+
+
+
 
 export default Feedback;
